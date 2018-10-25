@@ -9,7 +9,7 @@ function quadEqSolve(a, b, c) {
     } else if (d >= 0) {
         const x1 = (- (b) - Math.sqrt(d)) / (2 * a);
         const x2 = (- (b) + Math.sqrt(d)) / (2 * a);
-        return ("x1 = " + x1 + "x2 = " + x2);
+        return ("value x1 = " + x1 + "              value x2 = " + x2);
     }
 }
 
