@@ -2,6 +2,18 @@ const a = parseFloat(prompt("enter A value"));
 const b = parseFloat(prompt("enter B value"));
 const c = parseFloat(prompt("enter C value"));
 
+var arr = [a, b, c];
+
+function ifNumber(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        var x = arr[i];
+        if (Number.isNaN(x)) {
+            alert("Enter only number");
+        }
+    }
+}
+ifNumber(arr);
+
 function quadEqSolve(a, b, c) {
     const d = b * b - 4 * a * c;
     if (d < 0) {
